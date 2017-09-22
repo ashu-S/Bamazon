@@ -9,9 +9,6 @@ The app has 3 stand alone running files:
 I Tried to write an App which runs using single javascript file (bamazon.js) which inturns call customer.js,manager.js and supervisor.js
 But I could not complete it. I am still working on it.
 
-<H2> Here is the document with all the screenshot if in case I am unable to add screenshots to markdown file:</H2>
-https://drive.google.com/open?id=16M2Jhah5acgMEqRjdkXD6zuCLjqjgXI9yH3MhoCe8OM
-
 Below are the Screen shots to show how the app works:
 <h3> Customer View </h3>
 
