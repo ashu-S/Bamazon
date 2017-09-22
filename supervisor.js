@@ -23,9 +23,12 @@ connection.connect(function(err){
 		throw err;
 	}
 	console.log("successfully connected as ID : " + connection.threadId);
-	console.log("------------------ Welcome to Bamazon ---------------");
-	console.log("-------------- Your very own online bazaar ---------------")
-	
+	var table = new Table({head:["---------------------- Welcome to Bamazon ---------------------------"]});
+	table.push(["------------------ Your very own online bazaar -------------------------"]);
+	console.log("  ");
+	console.log(table.toString());
+	console.log("  ");
+		
 	supervisorView();
 			
 }); // Close connect
@@ -38,7 +41,7 @@ function supervisorView()
       name: "action",
       type: "list",
       message: "Enter your choice: ",
-      choices: ["View Products Sales by Department","Create New Department"]
+      choices: ["View Products Sales by Department","Create New Department","Quit"]
     }]).then(function(answers){
 	      switch (answers.action) {
 		        case "View Products Sales by Department":
@@ -47,8 +50,19 @@ function supervisorView()
 		        case "Create New Department":
 		          createDepartment();
 		          break;
+		        case "Quit":
+		          var table = new Table({head:['Exiting supervisor View. Thank you!']});
+				  console.log("  ");
+				  console.log("  ");
+				  console.log(table.toString());
+				  console.log("  ");
+				  console.log("  ");
+		          break;
+
 	        }
+
     	});
+
 }
 function productByDepartment(){
 	var query =  "select department_id,departments.department_name,over_head_costs,products.product_sales,(products.product_sales-departments.over_head_costs) as profit from products right join departments on products.department_name = departments.department_name";
@@ -65,6 +79,9 @@ function productByDepartment(){
 	         );
 	       }
 	  console.log(table.toString());
+	  console.log("  ");
+	  console.log("  ");
+	  supervisorView();
 	});
 }
 
@@ -92,8 +109,12 @@ function createDepartment()
         },
         function(err) {
           if (err) throw err;
-          console.log("Department added successfully!");
-          productByDepartment();
+          
+            var table = new Table({head:['New department added successfully!']});
+			console.log("  ");
+			console.log(table.toString());
+			console.log("  ");
+		          
           supervisorView();
         }
       );

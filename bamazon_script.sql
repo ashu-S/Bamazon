@@ -78,4 +78,15 @@ values ("Electronics",867.00),
        
 select * from departments;
 
+use bamazon;
+delete from departments where department_id = 3;
+
+use bamazon;
+select department_id,departments.department_name,over_head_costs,products.product_sales,(products.product_sales-departments.over_head_costs)
+as profit from products right join departments on products.department_name = departments.department_name;
+
+use bamazon;
+select products.item_id, products.product_name, departments.department_name, departments.over_head_costs, products.product_sales 
+from products, departments where products.department_name = departments.department_name
+
 
