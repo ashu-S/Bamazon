@@ -1,5 +1,7 @@
 # Bamazon
-creating an Amazon-like storefront with the MySQL skills you learned this week. The app will take in orders from customers and deplete stock from the store's inventory.
+creating an Amazon-like storefront with the Node.js and MySQL skills you learned this week. The app will take in orders from customers and deplete stock from the store's inventory.
+
+It also works like an inventory management app which has Manager view and Supervisor view.
 
 The app has 3 stand alone running files:
 1. Customer.js (Customer View)
