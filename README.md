@@ -19,6 +19,8 @@ Below are the Screen shots to show how the app works:
 ![Customer View](/Screenshots/Customer1.png?raw=true "Customer View")
 ![Customer View](/Screenshots/customer2.png?raw=true "Customer View")
 ![Customer View](/Screenshots/customer3.png?raw=true "Customer View")
+![Customer View](/Screenshots/customer4.png?raw=true "Customer View")
+
 
 <h3> Manager View </h3>
 
