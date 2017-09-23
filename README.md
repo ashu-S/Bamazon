@@ -30,11 +30,10 @@ Below are the Screen shots to show how the app works:
 ![Manager View](/Screenshots/manager4.png?raw=true "Manager View")
 ![Manager View](/Screenshots/manager5.png?raw=true "Manager View")
 ![Manager View](/Screenshots/manager6.png?raw=true "Manager View")
-![Manager View](/Screenshots/manager6.png?raw=true "Manager View")
 ![Manager View](/Screenshots/manager7.png?raw=true "Manager View")
 ![Manager View](/Screenshots/manager8.png?raw=true "Manager View")
 ![Manager View](/Screenshots/manager9.png?raw=true "Manager View")
-![Manager View](/Screenshots/manager10.png?raw=true "Manager View")
+
 
 <h3> Supervisor View </h3>
 
